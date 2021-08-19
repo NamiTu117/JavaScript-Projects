@@ -17,9 +17,11 @@ document.write ("\"Bella Poarch has to be one the most"
                 + "talented Tik Tok Stars"); 
 
 //concating multiple strings
-var Deities ="Names", First="Krishna", Second="Gaia",
-              Third="Odin", Fourth="Oshun"
-    document.write(First)
+var Deity1 = "Krishna"
+    document.write(Deity1); 
+
+var Deity2 ="Kali Ma"
+    document.write(Deity2); 
 //how to switch font colors and make the string that color
 var reds=("Help");
 var reds=reds.fontcolor("red");
