@@ -1,13 +1,13 @@
 
 window.alert("WAZZUP");
 var e = "Why"
-window.alert (e);s
+window.alert (e);
 var y ="Stan from Eminem was kinda disturbing"
 document.write(y);
 
 function check() {
-    var content=document.getElementById("Hi").innerText;
-    alert(content); 
+    var content= document.getElementById("Hi").innerText;
+    alert(check); 
 }
 
 //how to write commas without the extra marks showing
