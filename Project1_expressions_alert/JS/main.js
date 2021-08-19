@@ -17,11 +17,15 @@ document.write ("\"Bella Poarch has to be one the most"
                 + "talented Tik Tok Stars"); 
 
 //concating multiple strings
-var Deity1 = "Krishna"
-    document.write(Deity1); 
+//var Deity= "Seth", Deity2="Tony", Deity3="Eric"; 
+//document.write(Deity + Deity2);
 
-var Deity2 ="Kali Ma"
-    document.write(Deity2); 
+var Deity1 ="Krishna",  Deity2 ="Kali Ma";
+var Deity3= Deity1 + Deity2;
+document.write(Deity3);
+
+
+
 //how to switch font colors and make the string that color
 var reds=("Help");
 var reds=reds.fontcolor("red");
