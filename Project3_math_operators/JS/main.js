@@ -1,8 +1,9 @@
+//math functions
+//remember to make them buttons
 function addition_Function() {
     var addition = 2 + 2;
-    document.getElementById("addition").innerHTML = "2 + 2 = " + addition; 
+    document.getElementById("Math").innerHTML = "2 + 2 = " + addition; 
 }
-document.write(addition_Function); 
 
 function subtract() {
     var sub = 3 - 2; 
@@ -16,11 +17,43 @@ function multiply() {
 
 function divide() {
     var div = 8 / 1 ; 
-    document.getElementById("Math").innerHTML = "8 / 1 = " + div; 
-    document.write(divide); 
+    document.getElementById("Math").innerHTML = "8 / 1 = " + div;  
 }
 
-function yay() {
-    var multi = (9 + 10) * 2 / 8 - 3; 
-    document.getElementById("Math").innerHTML = "9 plus 10, multiplied by 2, divided by 8 minus 3"
+function operations() {
+    var operators = (9 + 1) * 2 / 3 - 5; 
+    document.getElementById("Math").innerHTML = "9 plus 1, muliplied by 2 divided by 3 minus 5 equals" + operators;
 }
+
+function modulus() {
+    var mod = 6 % 4; 
+    document.getElementById("Math").innerHTML = "When you divide 6 by 4 you have a remainder of " + mod; 
+}
+
+function negate_operator() {
+    var x = 10;
+    document.getElementById("Math").innerHTML = -x;
+}
+
+//increments and decrements 
+
+//increment 
+var y = 6.75; 
+y++;
+document.write(y);
+
+//decrement 
+var a = 5; 
+a--; 
+document.write(a);
+
+//random numbers
+//returning a random number between 0 and 1
+window.alert(Math.random() );
+
+//random number between 0 and 100
+window.alert(Math.random() * 100); 
+
+//MATH OBJECT
+//rounds to the nearest integer Math.ceil()
+document.getElementById("Math").innerHTML = Math.ceil(3.1); 
