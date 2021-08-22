@@ -1,7 +1,7 @@
 function Call_Loop() {
     var digits = ""; 
     var x = 2; 
-    while (x < 9); {
+    while (x < 9) {
         digits += "<br>" + x;
         x++; 
     }
@@ -9,8 +9,11 @@ function Call_Loop() {
 }
 
 //string length 
+function stringy() {
 let text = "Hi there"; 
 document.getElementById("lengthy").innerHTML = text.lengthy; 
+}
+
 
 //for loop 
 var movies = ["John Wick", "The Matrix", "Speed"]; 
@@ -23,7 +26,7 @@ function forLoop() {
     document.getElementById("Movies").innerHTML = content; 
 }
 
-function type() {
+function types() {
     var DogTypes = [];
     DogTypes[0] ="Rottweiler";
     DogTypes[1] ="Pitbull";
@@ -46,7 +49,7 @@ let game = {
     year: "2015",
     rated: "M",
     description: function() {
-        return "You can only play " + this.name + "on " + this.console; 
+        return "You can only play " +  this.name +  "on " + this.console; 
     }
 }; 
 document.getElementById("games").innerHTML = game.description();
@@ -55,7 +58,7 @@ document.getElementById("games").innerHTML = game.description();
 
 function breakit() {
 let text = ""; 
-for (let k = 0; i < 12; k++) {
+for (let k = 0; k < 12; k++) {
     if (k == 5) {break;}
     text += "Your number is " + k + "<br>";
 }
