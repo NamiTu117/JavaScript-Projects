@@ -48,25 +48,27 @@ function placeXOrO(squareNumber) {
                     //Returning true is needed for our computersTurn() function to work.
                     return true; 
 
-                    //This function results in a random square being selected. 
+                //This function results in a random square being selected. 
                     function computersTurn() {
                         //this boolean is needed for our while loop. 
                         let success = false; 
                         //this variable stores a random 0-8
                         let pickASquare; 
                         //this condition allows our while loop to keep trying if a square is selected already
-                        while (!success) {
-                            //a random number between 0 and 8 is selected
-                            pickASquare = String(Math.floor(Math.random() * 9));
-                            //if the random number evaluated returns true, the square hasn't been selected yet
-                            if (placeXOrO(pickASquare)) {
+                            while (!success) {
+                                //a random number between 0 and 8 is selected
+                                pickASquare = String(Math.floor(Math.random() * 9));
+                                //if the random number evaluated returns true, the square hasn't been selected yet
+                                if (placeXOrO(pickASquare)) {
                                 //this lines calls the function 
                                 placeXOrO(pickASquare);
                                 //this changes our boolean and ends the loop.
-                                success = true; 
-                            }   
+                            }    success = true; 
+           
                         }
                     }
+
+
 }
 
 //this function parses the selectedSquares array to search for win conditions. 
@@ -108,7 +110,7 @@ function checkWinConditions() {
     //squares are selected the tie game sound 
     else if (selectedSquares.length >=9) {
         //this function plays the tie game sound 
-        audio('./media/tie.mp3');
+        audio('./media/zapsplat_bells_small_hand_bell_ring_in_water_weird_cartoon_tune_005_61910.mp3');
         //this function ssests a .3 second timer before the resetGame is called
         setTimeout(function () {resetGame(); }, 1000 );  
     }
@@ -214,7 +216,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //this lines disallows clicking while the win sound is playing 
         disableClick();
         //this line plays the win sounds
-        audio('./media/winGame.mp3');
+        audio('./media/zapsplat_bells_bell_small_hand_ring_ping_single_soft_003_67992.mp3');
         //this line calls our main animation loop 
         animateLineDrawing(); 
         //this line waits 1 second, then clears away, resets, and allows clicking again
