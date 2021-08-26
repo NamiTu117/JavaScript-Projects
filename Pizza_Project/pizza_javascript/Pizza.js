@@ -29,7 +29,7 @@ function getReceipt() {
     //these variables will get passed on to each function
     getTopping(runningTotal,text1); 
 }; 
-
+//stores selected items for pricing
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0; 
     var selectedTopping = []; 
@@ -45,7 +45,7 @@ function getTopping(runningTotal,text1) {
         toppingTotal = (toppingCount - 1); 
     } else {
         toppingTotal = 0; 
-    }
+    }//calculates the price
     runningTotal = (runningTotal + toppingTotal); 
     console.log("total selected topping items: "+toppingCount); 
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00"); 
