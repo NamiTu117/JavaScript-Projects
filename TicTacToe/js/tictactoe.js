@@ -104,7 +104,7 @@ function checkWinConditions() {
     //O 1, 4, 7 conditions 
     else if (arrayIncludes('1O', '4O', '7O')) {drawWinLine(304, 50, 304, 558) }
     //O 2, 5, 6 conditions 
-    else if (arrayIncludes('2O', '5O', '6O')) {drawWinLine(508, 50, 508, 558) }
+    else if (arrayIncludes('2O', '5O', '8O')) {drawWinLine(508, 50, 508, 558) }
     //O 6, 4, 2
     else if (arrayIncludes('6O', '4O', '2O')) {drawWinLine(100, 508, 510, 90) }
     //O 0, 4, 8 condition 
